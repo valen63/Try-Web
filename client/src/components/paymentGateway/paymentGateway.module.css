@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&display=swap');
+
+.tarjeta {
+    padding: 15px 10px;
+    background: #d0d1d5;
+    border-radius: 8px;
+}
+
+.body {
+    font-family: 'Work Sans', sans-serif;
+    background: #00d2ff;
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    /* Thanks to uigradients :) */
+    padding: 20px 0;
+    min-height: 100vh;
+}
+
+.card {
+    background: linear-gradient(109deg, #000204, #022093);
+    border-radius: 14px;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 2px 10px 40px black;
+    z-index: 1000000;
+    position: relative;
+}
+
+.card div {
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    text-transform: uppercase;
+    flex-direction: row;
+}
+
+.card div label {
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.logo_card,
+.chip_card {
+    max-width: 50px;
+    margin-bottom: 15px;
+    margin-top: -19px;
+}
+
+.chip_card {
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.container label {
+    display: flex;
+    font-size: 12px;
+    color: white;
+    opacity: .4;
+    font-family: monospace;
+}
+
+.container input {
+    text-transform: uppercase;
+    font-family: 'Roboto Slab';
+    border: none;
+    border-bottom: 1px solid transparent;
+    color: #dbdce0;
+    padding: 4px;
+    bottom: -10px;
+    position: relative;
+    padding: 10px 0;
+    background: #0000000d;
+    border-radius: 5px;
+}
+
+.container .input {
+    color: black;
+    width: 100%;
+    padding: 8px;
+}
+
+.titulo {
+    font-family: 'Roboto Slab';
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 5px;
+}
+
+.abajo {
+    width: 100%;
+    padding-top: 300px;
+    padding-top: 380px;
+}
+
+.abajo P {
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.input_cardnumber {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.error {
+    text-align: center;
+    background: #ff00006b;
+    height: auto;
+    padding: 12px;
+    border-radius: 10px;
+    font-family: 'Roboto Slab';
+    font-size: small;
+    font-weight: bold;
+}
+
+.toleft {
+    float: left;
+}
+
+input .toleftccv {
+    width: 50px;
+    margin-top: -5px;
+    font-size: 15px;
+}
+
+.col p {
+    font-size: large;
+    font-family: 'Anek Latin', sans-serif;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.receipt {
+    background: #dbdce0;
+    border-radius: 4px;
+    padding: 5%;
+    padding-top: 200px;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    margin-top: -180px;
+    position: relative;
+    min-height: 500px;
+}
+
+.col {
+    width: 50%;
+    float: left;
+}
+
+.bought-item {
+    background: #f5f5f5;
+    padding: 2px;
+}
+
+.bought-items {
+    margin-top: -3px;
+}
+
+.container input:focus {
+    border-bottom: 1px solid #1abc9c;
+    outline: none;
+}
+
+.seller {
+    color: #01186f;
+    font-family: 'Open_sans';
+    padding: 5px
+}
+
+.description {
+    font-size: 13px;
+}
+
+.price {
+    font-size: 12px;
+}
+
+.comprobe {
+    text-align: center;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.proceed,
+.proceed2,
+.proceed3,.cerrar {
+    position: absolute;
+    top: 35%;
+    transform: translate(350px, 10px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1abc9c;
+    border: none;
+    color: white;
+    transition: box-shadow .2s, transform .4s;
+    cursor: pointer;
+}
+
+.proceed3 {
+    POSITION: RELATIVE;
+    transform: translate(120%, 10px);
+    width: 150px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab';
+}
+
+.proceed2,.cerrar {
+    position: relative;
+    transform: none;
+    margin: 0 50px;
+    background: #bc1a1a;
+}
+
+.proceed2 a,.cerrar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.proceed:active {
+    outline: none;
+}
+
+.proceed:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+.sendicon {
+    filter: invert(100%);
+    padding-top: 2px;
+}
+
+.datos {
+    width: 100%;
+    color: black;
+}
+
+.load {
+    height: 30px;
+}
+
+.recuadro {
+    max-width: 190vh;
+    display: flex;
+    overflow: hidden;
+    padding: 50px;
+    min-height: 85vh;
+    background: #e1ffddc4;
+    margin: 20px 60px;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    z-index: 30;
+    gap: 80px;
+    justify-content: space-around;
+}
+
+.recuadro div {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60vh;
+    max-width: 50%;
+}
+
+.confeti {
+    position: absolute;
+    width: 100%;
+    max-height: 90vh;
+}
+
+.recuadro h1,
+.recuadro h2 {
+    color: white;
+    mix-blend-mode: difference;
+    font-family: 'Roboto Slab';
+    font-size: xxx-large;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.recuadro label {
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+
+.recuadro a {
+    padding: 10px;
+    background: #3e3e3e;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto Slab';
+    text-transform: uppercase;
+}
+
+.recuadro h5 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.recuadro h2 {
+    font-size: x-large;
+    color: aqua;
+}
+.cerrar{
+    padding: 8px 15px;
+}
+.cerrar a{
+    font-size: large;
+}
+@media (max-width: 600px) {
+    .proceed {
+        transform: translate(320px, 10px);
+    }
+
+    .abajo {
+        padding-top: 570px;
+    }
+
+    .col {
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .recuadro {
+        margin: 30px;
+        flex-direction:  column;
+        gap: 10px;
+    }
+
+    .proceed3 {
+        transform: translate(80%, 10px);
+    }
+
+}

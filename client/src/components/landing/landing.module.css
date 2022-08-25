@@ -1,0 +1,94 @@
+/* FONTS */
+
+
+
+@font-face {
+    font-family: "Open_sans";
+    src: url(../../fonts/OpenSans-Regular.ttf);
+}
+
+/* UTILIDADES */
+.img{
+    max-width: 100%;
+}
+.item2{
+    display: flex;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+/* ESTILOS */
+.containerHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    min-width: 100vw;
+    background: rgb(255,29,56);
+    background: linear-gradient(9deg, rgba(255,29,56,1) 0%, rgba(255,102,108,1) 65%);
+}
+
+.containerMain{
+    display: flex;
+    justify-content: space-between;
+
+}
+.item,.item2 {
+    max-width: 50%;
+    padding: 20px;
+    margin: 20px;
+}
+.item h1{
+    font-family: 'Open_sans';
+    font-size: 2.6rem;
+    color: #FFF;
+}
+
+.item p {
+    font-family: 'Open_sans';
+    font-size: 1.2rem;
+    color: #FFF;
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+
+.item button {
+    width: 10rem;
+    min-height: 3rem;
+    background: #00000063;
+    font-family: 'Open_Sans';
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 10px;
+    border-radius: .5em;
+    border: solid 2px #ffffff;
+    cursor: pointer;
+    box-shadow: -2px 2px 5px #000;
+}
+
+.item .containerButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 650px) {
+    .item .containerButton {
+        flex-direction: column;
+    }
+    .containerMain{
+        flex-direction: column;
+    }
+    .item,.item2{
+        max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+}
