@@ -1,5 +1,4 @@
 "PORT" = 3001
-"MONGODB_URI" = "mongodb+srv://ValentinaPF:zK43Z5CJ2jJPOgwG@cluster0.ps3zqrq.mongodb.net/?retryWrites=true&w=majority" 
 "JWT_EXPIRES_IN"="1d"
 "JWT_SECRET"="secret"
 "MAIL_HOST"="smtp.gmail.com"
